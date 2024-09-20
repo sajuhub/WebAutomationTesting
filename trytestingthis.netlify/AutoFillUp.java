@@ -92,9 +92,16 @@ public class TestT {
 	     // Input a new message
 	     String newMessage = ("Seeking vibrant, innovative company for QA engineer role.");
 	     messageField.sendKeys(newMessage);
+             Thread.sleep(2000);
 
 	     //print the length of the input to verify
 	     System.out.println("New message length: " + newMessage.length());
+	     
+	     WebElement submitButton = driver.findElement(By.className("btn-success"));
+
+	        // Click the button to open the new window/tab
+	     submitButton.click();
+	     Thread.sleep(2000);
 	 
 		
 	}
